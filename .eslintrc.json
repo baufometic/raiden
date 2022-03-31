@@ -1,0 +1,66 @@
+{
+	"env": {
+		"es2020": true,
+		"node": true,
+		"jest": true
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"ignorePatterns": [
+		"**/node_modules/*"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"root": true,
+	"rules": {
+		"array-bracket-spacing": [
+			"error",
+			"always"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"key-spacing": [
+			"error",
+			{
+				"align": {
+					"beforeColon": true,
+					"afterColon": true,
+					"on": "colon"
+				}
+			}
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"no-bitwise": "error",
+		"no-console": "error",
+		"no-multi-spaces": [
+			"error"
+		],
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"template-curly-spacing": [
+			"error",
+			"always"
+		]
+	}
+}

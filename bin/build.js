@@ -864,7 +864,7 @@ module['exports'] = colors$1;
 extendStringPrototype.exports();
 }(lib));
 
-var version = "1.235.0";
+var version = "1.238.0";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -1128,7 +1128,6 @@ emitter.on(TASKS.INIT_COMPLETE, () => {
 //* COPY FILES - this will cover all except those which cover
 emitter.on(TASKS.PACKAGE_JSON_UPDATED, () => {
 	const filesToCopy = [
-		{ name: ".env", hasCopied: false },
 		{ name: ".eslintrc.json", hasCopied: false },
 		{ name: "next-env.d.ts", hasCopied: false },
 		{ name: "next.config.js", hasCopied: false },
@@ -1197,14 +1196,14 @@ emitter.on(TASKS.FILES_COPIED, () => {
 //* INSTALL DEPENDENCIES
 emitter.on(TASKS.GIT_INITIALISED, () => {
 	const dependencies = [
-		"@techandtribal/combronents",
-		"@techandtribal/maximilian",
 		"@fortawesome/fontawesome-svg-core",
 		"@fortawesome/free-brands-svg-icons",
 		"@fortawesome/free-regular-svg-icons",
 		"@fortawesome/free-solid-svg-icons",
 		"@fortawesome/react-fontawesome",
 		"@supabase/supabase-js",
+		"@techandtribal/combronents",
+		"@techandtribal/maximilian",
 		"next",
 		"nodemailer",
 		"react",
@@ -1222,15 +1221,9 @@ emitter.on(TASKS.GIT_INITIALISED, () => {
 		"@types/react",
 		"@types/react-dom",
 		"@types/styled-components",
+		"@typescript-eslint/eslint-plugin",
 		"eslint",
 		"eslint-config-next",
-		"eslint-import-resolver-typescript",
-		"@typescript-eslint/eslint-plugin",
-		"@typescript-eslint/parser",
-		"eslint-plugin-import",
-		"eslint-plugin-jsx-a11y",
-		"eslint-plugin-react",
-		"eslint-plugin-react-hooks",
 		"jest",
 		"typescript",
 	];

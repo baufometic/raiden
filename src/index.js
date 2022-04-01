@@ -285,7 +285,6 @@ emitter.on(TASKS.INIT_COMPLETE, () => {
 //* COPY FILES - this will cover all except those which cover
 emitter.on(TASKS.PACKAGE_JSON_UPDATED, () => {
 	const filesToCopy = [
-		{ name: ".env", hasCopied: false },
 		{ name: ".eslintrc.json", hasCopied: false },
 		{ name: "next-env.d.ts", hasCopied: false },
 		{ name: "next.config.js", hasCopied: false },

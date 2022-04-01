@@ -864,7 +864,7 @@ module['exports'] = colors$1;
 extendStringPrototype.exports();
 }(lib));
 
-var version = "1.225.0";
+var version = "1.235.0";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -1197,21 +1197,21 @@ emitter.on(TASKS.FILES_COPIED, () => {
 //* INSTALL DEPENDENCIES
 emitter.on(TASKS.GIT_INITIALISED, () => {
 	const dependencies = [
+		"@techandtribal/combronents",
+		"@techandtribal/maximilian",
 		"@fortawesome/fontawesome-svg-core",
 		"@fortawesome/free-brands-svg-icons",
 		"@fortawesome/free-regular-svg-icons",
 		"@fortawesome/free-solid-svg-icons",
 		"@fortawesome/react-fontawesome",
 		"@supabase/supabase-js",
-		"@supabase/ui",
-		"@techandtribal/combronents@latest",
-		"@techandtribal/maximilian@latest",
 		"next",
 		"nodemailer",
-		"react@17.0.2",
-		"react-dom@17.0.2",
+		"react",
+		"react-dom",
 		"styled-components",
 	];
+
 	const devDependencies = [
 		"@testing-library/jest-dom",
 		"@testing-library/react",

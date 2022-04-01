@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import shebang from "rollup-plugin-preserve-shebang";
 import replace from "@rollup/plugin-replace";
 import json from "@rollup/plugin-json";
@@ -7,6 +8,7 @@ import commonjs from "@rollup/plugin-commonjs";
 
 //const packageJson = require("./package.json");
 const NODE_ENV = process.env.NODE_ENV || "development";
+console.log(`ENV: ${ NODE_ENV }`);
 
 const plugins = [
 	shebang(),
@@ -26,8 +28,9 @@ export default [
 		input  : "src/index.js",
 		output : [
 			{
-				file   : "bin/build.js",
-				format : "esm"
+				file      : "bin/build.js",
+				format    : "esm",
+				sourcemap : false,
 			}
 		],
 		plugins: [ ...plugins ],

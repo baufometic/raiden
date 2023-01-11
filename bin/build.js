@@ -1093,7 +1093,7 @@ emitter.on(TASKS.INIT_COMPLETE, () => {
 	// TODO switch to package read method instead?
 	data = {
 		...data,
-		author      : "Pete Savva <p.savva@protonmail.ch> (https://techandtribal.com)",
+		author      : "Peter Papasavvas <peter@techandtribal.com> (https://techandtribal.com)",
 		description : "NextJS app built by Raiden",
 		license     : "ISC",
 		private     : true,

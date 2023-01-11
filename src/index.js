@@ -250,7 +250,7 @@ emitter.on(TASKS.INIT_COMPLETE, () => {
 	// TODO switch to package read method instead?
 	data = {
 		...data,
-		author      : "Pete Savva <p.savva@protonmail.ch> (https://techandtribal.com)",
+		author      : "Peter Papasavvas <peter@techandtribal.com> (https://techandtribal.com)",
 		description : "NextJS app built by Raiden",
 		license     : "ISC",
 		private     : true,
@@ -310,7 +310,7 @@ emitter.on(TASKS.PACKAGE_JSON_UPDATED, () => {
 		{ name: "src/pages/_app.tsx", hasCopied: false },
 		{ name: "src/pages/_document.tsx", hasCopied: false },
 		{ name: "src/pages/index.tsx", hasCopied: false },
-		{ name: "styles/globals.css", hasCopied: false },
+		{ name: "styles/fonts.css", hasCopied: false },
 	];
 
 	const pathToSourceFiles = path.join(__dirname, "../filesToCopy/");
@@ -359,7 +359,6 @@ emitter.on(TASKS.GIT_INITIALISED, () => {
 		"@fortawesome/free-solid-svg-icons",
 		"@fortawesome/react-fontawesome",
 		"@supabase/supabase-js",
-		"@techandtribal/combronents",
 		"@techandtribal/maximilian",
 		"next",
 		"nodemailer",

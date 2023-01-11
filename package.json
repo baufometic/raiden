@@ -1,8 +1,8 @@
 {
 	"name": "@techandtribal/raiden",
 	"description": "Rapid NextJS deployment framework",
+	"author": "Peter Papasavvas <peter@techandtribal.com> (https://techandtribal.com)",
 	"version": "1.238.0",
-	"author": "Pete Savva <p.savva@protonmail.ch> (https://techandtribal.com)",
 	"license": "MIT",
 	"type": "module",
 	"bin": {

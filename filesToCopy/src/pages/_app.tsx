@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import styled from "styled-components";
 import { GlobalResetComponent, SASS } from "@techandtribal/maximilian";
-import "../../styles/globals.css";
+import "../../styles/fonts.css";
 
 const AppLayout = styled.div`
 	header, main, footer {
@@ -111,7 +111,7 @@ END OF FOOTER
 const App = ({ Component, pageProps }: AppProps) => {
 	return(
 		<>
-			<GlobalResetComponent />
+			<GlobalResetComponent appContainer="#__next"/>
 			<AppLayout>
 				<Header />
 				<Main>

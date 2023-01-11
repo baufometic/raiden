@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
 import styled, { keyframes } from "styled-components";
 import { LifecycleWrapper, SASS } from "@techandtribal/maximilian";
-import { config, Div } from "@techandtribal/combronents";
-config.logging = false; // default anyway, just a reminder that Combronents can log verbose
 
 const Layout = styled.div`
 	${ SASS.flex.center };
@@ -30,9 +28,7 @@ const Layout = styled.div`
 		width: 100%;
 
 		animation: ${ keyframes`
-			to {
-				transform: scaleY(1);
-			}
+			to {transform: scaleY(1); }
 		` } 500ms 2000ms ease-in-out forwards;
 
 		.title {
@@ -43,7 +39,7 @@ const Layout = styled.div`
 			
 			animation:
 				${ keyframes`
-					to { color: color: #FFFFFF; }
+					to { color: #FFFFFF; }
 				` } 1000ms 1000ms ease-in-out forwards,
 				${ keyframes`
 					0% { text-shadow: 0; }
@@ -138,14 +134,13 @@ const Home: NextPage = (props) => {
 	return(
 		<LifecycleWrapper name="HomePage" { ...props }>
 			<Layout>
-				<Div h_full w_full />
 				<div className="titleContainer">
 					<h1 className="title">
 						{ "R A I D E N" }
 					</h1>
-					<h3 className="subtitle">
+					<h2 className="subtitle">
 						{ "Powered by Tech & Tribal" }
-					</h3>
+					</h2>
 				</div>
 				<div className="buttonContainer">
 					<button className="button">
